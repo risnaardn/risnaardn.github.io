@@ -1,0 +1,168 @@
+body {
+    background-color: #e58fb3;
+}
+
+.navbar {
+    position: relative;
+    /* z-index digunakan untuk mengatur layer/tumpukan*/
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/gambar.jpg);
+    background-size: cover;
+    height: 550px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(95, 255, 228, 1), rgba(95, 255, 228, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: rgb(127, 169, 238);
+    margin-top: 50px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(255, 197, 228, 0.6);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* INFO PANEL */
+.info-panel {
+    font-family: Viga;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px 30px;
+}
+
+.info-panel h1 {
+    /* font-size: 16px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* About */
+.row-about {
+    padding-bottom: 150px;
+}
+
+.about {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.about-self {
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+/* Portofolio */
+.portofolio {
+    padding-bottom: 150px;
+    background-color: #c7c7c7;
+}
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 10px;
+    margin-top: 25px;
+}
+/* Contact */
+.contact {
+    background-color: #d889ba;
+}
+
+.contact-info {
+    font-family: Viga;
+    color: black;
+    opacity: 0.5;
+    margin-top: 25px;
+    /* padding-left: 40px; */
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 100px;
+}
+
+.footer p {
+    color: #ACACAC;
+    font-size: 18px;
+}
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    /* color: white; */
+    padding: 10px 10px;
+    margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+        font-weight: 500;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #dc0b62;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+        text-transform: uppercase;
+    }
+
+}
